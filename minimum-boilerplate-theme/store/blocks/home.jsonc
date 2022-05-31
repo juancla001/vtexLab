@@ -1,0 +1,227 @@
+{
+  "store.home": { 
+    "blocks": [
+      "rich-text",
+      //"list-context.image-list#demo",
+      //"slider-layout",
+      "stack-layout#cta",
+      "info-card#button-right",
+      "info-card#button-left",
+      "shelf#home",
+      "flex-layout.row#home",
+      "responsive-layout.desktop",
+      "responsive-layout.mobile#mobile",
+      "modal-trigger#cupon",
+      "tab-layout#home",
+      "list-context.product-list#home",
+      "store.custom#about-us"
+    ]
+  },
+
+  /*"list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/files/banner-infocard2.png",
+          "description": "something something"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+  /*"slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },*/
+  "rich-text": { 
+    "props": { 
+      "text": "Hello Friend",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "font": "t-heading-1"
+    }
+  },
+    "info-card#button-right": {
+      "props": {
+        "id": "info-card-buttonR",
+        "isFullModeStyle": false,
+        "textPosition": "right",
+        "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+        "headline": "Vintage Pink",
+        "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
+        "callToActionMode": "button",
+        "callToActionText": "Explore",
+        "callToActionUrl": "/sale/d",
+        "textAlignment": "center"
+      }
+  },
+  "info-card#button-left": {
+    "props": {
+      "id": "info-card-buttonL",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
+      "headline": "Shining chrome",
+      "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until January 2020.",
+      "callToActionMode": "button",
+      "callToActionText": "Explore",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center",
+      "blockClass": "vintage"
+    }
+  },
+  "shelf#home": {
+    "blocks":["product-summary.shelf"],
+    "props":{
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly", 
+      "productList": {
+        "maxItems": 10,
+        "itemsPErPage": 3,
+        "minItemsPerPage": 1,
+        "scroll": "BY-PAGE",
+        "arrows": true,
+        "titleText": "Mas vendidos"
+      }
+    }
+  },
+  "flex-layout.row#home":{
+    "children":[
+      "info-card#col-left",
+      "flex-layout.col#col-right"
+    ]
+  },
+  "info-card#col-left":{
+    "props":{
+      "id": "infoCard",
+      "imageUrl": "",
+      "isFullModeStyle": true,
+      "headline": "iMac",
+      "subhead": "Todo-en-uno",
+      "callToActionText": "mas informacion",
+      "callToActionUrl": "#",
+      "textPosition": "center",
+      "textAlignment": "center",
+      "callToActionMode": "link",
+      "blockClass": "infoCard"
+    }
+  },
+  "flex-layout.col#col-right":{
+    "children":[
+      "info-card#col-right-1",
+      "info-card#col-right-2"
+    ]
+  },
+  "info-card#col-right-1":{
+    "props":{
+      "id": "infoCard1",
+      "imageUrl": "",
+      "isFullModeStyle": false,
+      "headline": "google Home",
+      "subhead": "asistente virtual",
+      "callToActionText": "ver mas",
+      "callToActionUrl": "/",
+      "textAlignment": "center",
+      "callToActionMode": "button",
+      "blockClass": "infoCard1"
+    }
+  },
+  "info-card#col-right-2":{
+    "props":{
+      "id": "infoCard2",
+      "imageUrl": "",
+      "isFullModeStyle": false,
+      "headline": "stadia",
+      "subhead": "stadia virtual",
+      "callToActionText": "ver mas",
+      "callToActionUrl": "/",
+      "textAlignment": "center",
+      "callToActionMode": "button",
+      "blockClass": "infoCard2"
+    }
+  },
+  "responsive-layout.desktop":{
+    "children":[
+      "rich-text#desktop",
+      "image#desktop"
+    ]
+  },
+  "responsive-layout.mobile#mobile":{
+    "children":[
+      "rich-text#mobile",
+      "image#mobile"
+    ]
+  },
+  "rich-text#desktop":{
+    "props":{
+      "text": "#tu cafe a tu manera \n ### nueva coleccionde cafeteras",
+      "textPosition":"LEFT",
+      "textAlignment":"LEFT"
+    }
+  },
+  "rich-text#mobile":{
+    "props":{
+      "text": "### tu cafe a tu manera \n ### nueva coleccionde cafeteras",
+      "testPosition":"center",
+      "textAlignment":"center"
+    }
+  },
+  "image#desktop":{
+    "props":{
+      "src": "http://",
+      "link":{
+        "url": "http://"
+      },
+      "alt": "coffe makers collection",
+      "maxWidth": "100%"
+    }
+  },
+  "image#mobile":{
+    "props":{
+      "src": "http://",
+      "link":{
+        "url": "http://"
+      },
+      "alt": "coffe makers collection",
+      "maxWidth": "100%"
+    }
+  },
+  "modal-trigger#cupon":{
+    "children":[
+      "rich-text#cupon",
+      "modal-layout#cupon"
+    ]
+  },
+  "rich-text#cupon":{
+    "props":{
+      "text":"ver cupon",
+      "textAlignment":"CENTER",
+      "textPosition":"center",
+      "font":"t-heading-3",
+      "color":"c-on-emphasis"
+    }
+  },
+  "modal-layout#cupon":{
+    "children":[
+      "rich-text#modal-content"
+    ]
+  },
+  "rich-text#modal-content":{
+    "props":{
+      "text":"cupon: VTDLATAM2020",
+      "font":"t-heading-4",
+      "color": "c-on-emphasis"
+    }
+  }
+}
